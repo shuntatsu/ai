@@ -164,8 +164,7 @@ def get_binance_exchange_info() -> set:
         print(f"⚠️ Error fetching exchange info: {e}")
         return set()
 
-
-CoinGecko
+def fetch_top_by_market_cap(limit: int = 30) -> List[str]:
     """
     CoinGeckoから時価総額上位を取得し、BinanceのUSDTペアに変換
     """
